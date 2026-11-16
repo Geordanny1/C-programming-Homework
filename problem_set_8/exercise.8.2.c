@@ -17,7 +17,6 @@ contain the number of z’s. Your solution should only traverse the String once.
 # include <stdio.h>
 # include <string.h>
 
-
 int getAlphabeticalPosition(char);
 void printIntArray(int values[], int count);
 void LetterHist(char*, int*);
@@ -55,7 +54,6 @@ void printIntArray(int values[], int count)
       printf("%d, ", values[i]);
     }
   }
-
   printf(" }\n");
 }
 
@@ -64,8 +62,9 @@ int getAlphabeticalPosition(char letter)
 
   int position = 0;
 
-  /* ascii range lowerCase = [97, 122]; */
-  /* Ascii range upperCase = [65, 91]; */
+  /* Ascii range upperCase = [65, 91] */
+  /* ascii range lowerCase = [97, 122] */
+
   if (letter >=  65 && letter <= 91) {
     position = (int)letter - 'A' + 1;
     printf("position: %d\n", (int)letter - 'A' + 1);
